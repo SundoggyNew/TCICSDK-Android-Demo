@@ -70,9 +70,9 @@ implementation "com.google.android.play:asset-delivery-ktx:2.1.0"
 ### Step 1: Create a Google Play developer account
 ### Step 2: Create App in Google Play Console
 ### Step 3: Create the first test version and upload the release application
-![Internal testing creates a new version](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/34e6f87a-e78c-4edf-b20c-fcb5f080698c)
+![Internal testing creates a new version](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/18603a03-3ba3-4fe3-a331-e75605b0cfb7)
 ### Step 4: Open the test track (track) and invite test users
-![copy test link](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/54eb04ad-4868-486f-9441-034ff7bcc645)
+![copy test link](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/a0ca09fa-4321-4ae6-be74-fcbaf9dc2831)
 
 Open a browser on the test phone to access the copied link and accept the test invitation
 
@@ -80,17 +80,27 @@ Open a browser on the test phone to access the copied link and accept the test i
 
 After accepting the invitation, you can find the corresponding test application in the Google Play Store --> Manage Apps and Devices --> Ratings and Reviews
 
-<img width="338" alt="image" src="https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/e32483c0-8309-42e5-8a8a-fd8493d9919f">
+<img width="338" alt="image" src="https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/f3bf8b0e-0082-49b8-bb71-4ca4a007e293">
 
 ## process result display
 
-![aab packet size allocation](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/fcce9460-86a0-43f0-831f-eec889799b84)
-As can be seen from the uploaded aab package, the aab package is divided into two parts, consisting of functional modules and Asset packs. The size downloaded in the Google Play store is close to the base of the Install time type plus the Asset packs of the Install time type. After the installation is complete, enter the application to use the resources placed under the Asset packs module.
+![aab packet size allocation](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/cde711a3-1881-4666-82da-036143939b04)
+As can be seen from the uploaded aab package, the aab package is divided into two parts, consisting of Feature modules and Asset packs. The size downloaded in the Google Play store is close to the base of the Install time type plus the Asset packs of the Install time type. After the installation is complete, enter the application to use the resources placed under the Asset packs module.
 
 Note that the total size of functional modules in the Play Asset Delivery solution cannot exceed 150MB, and each module resource of Asset packs also has a corresponding size limit according to different distribution types. The download size of the application using the Play Asset Delivery solution can exceed 150M.
 
-![image](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/522891f8-0cee-4367-87c8-b071e7faef65)
+![image](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/197560b8-fc7d-499f-9856-692788e0fcc0)
 
-![image](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/0e69d3f4-3bc6-4f27-b398-d4b63be7bfb4)
+![image](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/3e27d63a-5fdc-4477-bde6-5973d6ffb002)
+
+The size limit of Asset Packs depends on their delivery type. The following are the size limits for the different delivery types:
+
+Install-time Asset Packs: These assets are downloaded when the application is installed. For Install-time Asset Packs, each Asset Pack has a size limit of 1GB. Note that this does not affect the base APK's 150MB size limit.
+
+Fast-follow Asset Packs: These assets are downloaded immediately after the app is installed. For Fast-follow Asset Packs, each Asset Pack is limited to 1GB in size.
+
+On-demand Asset Packs: These assets are downloaded on-demand while the app is running. For On-demand Asset Packs, there is a size limit of 512MB per Asset Pack.
+
+Overall, Asset Packs have a relatively large size limit, allowing you to distribute large amounts of assets to users. However, when designing your application, you should consider the user's network conditions and storage space constraints, and try to optimize the resource size and download strategy.
 
 ![image](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/51c6f19e-1de1-40c4-8158-23e6b38823f2)
