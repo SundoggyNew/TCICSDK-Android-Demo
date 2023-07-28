@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.edu:TCICSDK:1.8.0.20230727-SNAPSHOT@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca7c305384e418bc71e28d970c24d560/jetified-TCICSDK-1.8.0.20230727-SNAPSHOT/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca7c305384e418bc71e28d970c24d560/jetified-TCICSDK-1.8.0.20230727-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca7c305384e418bc71e28d970c24d560/jetified-TCICSDK-1.8.0.20230727-SNAPSHOT/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca7c305384e418bc71e28d970c24d560/jetified-TCICSDK-1.8.0.20230727-SNAPSHOT/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.edu/TCICSDK/1.8.0.20230727-SNAPSHOT/a8d884c270c2edee2f514d203d0999b18d8f7d14/TCICSDK-1.8.0.20230727-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

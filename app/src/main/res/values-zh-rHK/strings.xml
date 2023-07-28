@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LCIC_Demo</string>
+
+    <!--login-->
+    <string name="login_error">失敗</string>
+    <string name="login_error_msg">加載登錄頁面失敗:%d-%s</string>
+    <string name="change_url_tip">修改 Url</string>
+    <string name="change_url_hint">請輸入要修改的Url</string>
+
+</resources>
+

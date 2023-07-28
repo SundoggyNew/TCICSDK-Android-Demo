@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LCIC_Demo</string>
+
+    <!--login-->
+    <string name="login_error">失敗</string>
+    <string name="login_error_msg">ログインページの読み込みに失敗しました:%d-%s</string>
+    <string name="change_url_tip">改訂 Url</string>
+    <string name="change_url_hint">変更する URL を入力してください</string>
+
+</resources>
+

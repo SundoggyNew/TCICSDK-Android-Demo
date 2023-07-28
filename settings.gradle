@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name = 'TCICSDK-Android'
+include ':dynamicfeature'
+include ':assetpack'

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LCIC_Demo</string>
+
+    <!--login-->
+    <string name="login_error">Failed to load login page</string>
+    <string name="login_error_msg">Failed to load login page:%d-%s</string>
+    <string name="change_url_tip">Change Url</string>
+    <string name="change_url_hint">Please enter the URL to modify</string>
+
+</resources>
+

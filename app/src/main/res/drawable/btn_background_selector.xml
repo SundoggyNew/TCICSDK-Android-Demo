@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_enable_background" android:state_pressed="true" />
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#ff0a818c" />
+            <corners android:radius="3dp" />
+            <stroke
+                android:width="5dp"
+                android:color="#00C853" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/btn_disable_background" />
+</selector>

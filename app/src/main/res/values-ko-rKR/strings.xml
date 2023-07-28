@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LCIC_Demo</string>
+
+    <!--login-->
+    <string name="login_error">로그인 페이지를 불러오지 못했습니다</string>
+    <string name="login_error_msg">로그인 페이지를 불러오지 못했습니다:%d-%s</string>
+    <string name="change_url_tip">개정하다 Url</string>
+    <string name="change_url_hint">수정할 URL을 입력하세요.</string>
+
+</resources>
+

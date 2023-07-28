@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputEditText">
+        <attr name="text" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="title" format="string" />
+        <attr name="android:inputType" />
+        <attr name="android:maxLength" />
+        <attr name="android:editable" />
+        <attr name="android:drawableRight" />
+        <attr name="android:drawableLeft" />
+    </declare-styleable>
+</resources>
