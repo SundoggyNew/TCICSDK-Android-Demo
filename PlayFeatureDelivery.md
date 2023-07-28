@@ -121,10 +121,10 @@ After completion, you can see an .aab file in the app/release/ directory, which 
 ### Step 1: Create a Google Play developer account
 ### Step 2: Create App in Google Play Console
 ### Step 3: Create the first test version and upload the release application
-![Internal testing creates a new version](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/34e6f87a-e78c-4edf-b20c-fcb5f080698c)
+![Internal testing creates a new version](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/18603a03-3ba3-4fe3-a331-e75605b0cfb7)
 
 ### Step 4: Open the test track (track) and invite test users
-![copy test link](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/54eb04ad-4868-486f-9441-034ff7bcc645)
+![copy test link](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/a0ca09fa-4321-4ae6-be74-fcbaf9dc2831)
 
 Open a browser on the test phone to access the copied link and accept the test invitation
 
@@ -132,10 +132,17 @@ Open a browser on the test phone to access the copied link and accept the test i
 
 After accepting the invitation, you can find the corresponding test application in the Google Play Store --> Manage Apps and Devices --> Ratings and Reviews
 
-<img width="338" alt="image" src="https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/e32483c0-8309-42e5-8a8a-fd8493d9919f">
+<img width="338" alt="image" src="https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/f3bf8b0e-0082-49b8-bb71-4ca4a007e293">
 
 ## process result display
-![aab package size allocation](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/629f9c15-00a3-43d4-88ce-85c535a04b05)
+
+![aab package size allocation](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/abcc6519-39b2-483c-bfbe-ff73a62d6793)
 As can be seen from the uploaded aab package, the aab package is divided into two parts, consisting of base and dynamicfeature. The size downloaded in the Google Play store is close to the size of the base. After the installation is complete, enter the application and call ··· splitInstallManager.startInstall(request) ··· to download the resources under the dynamicfeature module.
+
+Despite using the Dynamic Feature, Google Play still has a limit on the APK file size of your app. For most devices, this limit is 150MB. This is because Google Play wants to ensure that users can download and install apps quickly and smoothly without problems caused by large file sizes.
+
+However, if your application requires larger asset files, you can use Play Asset Delivery (PAD). PAD is designed for large asset files, which allows you to package these assets into Asset Packs and distribute them to users in an efficient manner. PAD offers three delivery modes: install-time, fast-follow, and on-demand. This means you can control when assets are downloaded and installed.
+
+Using PAD, you can split your asset files into multiple Asset Packs, each Asset Pack can reach up to 1GB in size. This way, you can bypass the APK file size limit while still providing a better user experience.
 
 ![150MB Description](https://github.com/SundoggyNew/TCICSDK-Android-Demo/assets/16092720/8c2c09b2-5532-4e09-b84b-7074795af381)
