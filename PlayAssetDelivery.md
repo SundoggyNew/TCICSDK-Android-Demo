@@ -5,6 +5,9 @@ Play Asset Delivery (PAD) is a new method for distributing Android app and game 
 PAD allows developers to package application resources (such as game assets, native libraries, etc.) into Asset Packs. These Asset Packs can be downloaded on-demand at install time or runtime, reducing the size of the base APK and increasing download speed.
 
 ## Play Asset Delivery experience
+
+Refer to：https://developer.android.com/guide/playcore/asset-delivery/integrate-java?hl=en
+
 ### Step 1: Create Asset Pack in Android Studio
 1. In the top-level directory of your project, create a directory for the asset pack. This directory name is used as the asset pack name. Asset pack names must start with a letter and can only contain letters, numbers, and underscores.
 2. In the asset pack directory, create a build.gradle file and add the following code. Make sure to specify the name of the asset pack and only one delivery type:
