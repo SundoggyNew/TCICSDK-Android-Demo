@@ -61,7 +61,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.tencent.edu:TCICSDK:1.8.0.20230727-SNAPSHOT'
+    implementation 'com.tencent.edu:TCICSDK:1.8.1'
 
 //    implementation 'com.tencent.bugly:nativecrashreport:3.7.1'
 //    implementation 'com.tencent.bugly:crashreport_upgrade:1.4.5'
